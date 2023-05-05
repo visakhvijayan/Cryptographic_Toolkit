@@ -1,0 +1,262 @@
+body {
+  font-family: 'Ubuntu', sans-serif;
+  text-align: center;
+}
+
+h1, h2, h3, h4, h4, h5, h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+/*Heading*/
+
+
+.section-heading {
+  width: 80%;
+  margin: auto;
+  font-size: 2.7rem;
+  line-height: 1.5;
+}
+
+.fa-screwdriver-wrench{
+  color: #1A5F7A;
+}
+
+/* Navbar */
+.navbar {
+  padding: 0 0 1rem;
+}
+
+
+.nav-item {
+  padding: 0 18px;
+}
+
+.nav-link {
+  font-size: 1.25rem;
+  font-family: 'Montserrat-light', sans-serif;
+}
+
+
+/*coloured or not*/
+
+.coloured-section{
+  background-color: #569DAA;
+  color: #fff;
+}
+
+.white-section{
+  background: #fff;
+}
+
+.container-fluid {
+  padding: 3% 15% 7%;
+}
+@media(min-width: 1028px) {
+  .textarea{
+    width: 75%;
+    height: 55%;
+  }
+  .btn-cipher
+  {
+    background-color: #159895;
+    color: #B9EDDD;
+    border-color: #B9EDDD;
+    margin: 1%;
+    width: 30%;
+    border-radius: 8px;
+    margin-top: 4%;
+    padding: 2%;
+  }
+
+  .btn-cipher:hover {
+    background-color: #B9EDDD;
+    color: #159895;
+    border-color: #159895;
+  }
+  .cipher-text {
+    font-size: 1.35rem;
+    font-weight: bold;
+    color: #569DAA;
+  }
+  .navbar-brand {
+    font-weight: 600;
+    font-size: 2.75rem;
+  }
+  .nav-link {
+    font-size: 1.25rem;
+    font-family: 'Montserrat-light', sans-serif;
+  }
+  .big-heading {
+    font-size: 2.5rem;
+    line-height: 2;
+  }
+  .feature-text {
+    font-size: 1.25rem;
+  }
+  .feature-solid {
+    color: #1A5F7A;
+    font-size: 250%;
+  }
+
+  .feature-solid:hover {
+    color: #B9EDDD;
+  }
+  .about-text{
+    color: #569DAA;
+    font-size: 1.25rem;
+    text-align: left;
+  }
+  .about-heading{
+    color: #569DAA;
+    font-weight: bold;
+    font-size: 1.75rem;
+    text-align: left;
+  }
+  #input{
+    background-color: #B9EDDD;
+    color: #1A5F7A;
+    font-weight: bold;
+    font-size: 1.20rem;
+  }
+
+  #output{
+    background-color: #B9EDDD;
+    color: #1A5F7A;
+    font-weight: bold;
+    font-size: 1.20rem;
+  }
+
+  /* footer */
+  #footer {
+    width: 100%;
+    height: 20%;
+    padding:1.5%;
+    margin: auto;
+  }
+}
+
+@media(max-width: 1028px) {
+  #title{
+    text-align: center;
+  }
+  .textarea{
+    width: 75%;
+    height: 55%;
+  }
+  .col-lg-6{
+    margin-top: auto;
+  }
+  .btn-cipher
+  {
+    background-color: #159895;
+    color: #B9EDDD;
+    border-color: #B9EDDD;
+    margin: 1%;
+    width: 50%;
+    border-radius: 8px;
+    margin-top: 4%;
+    margin-bottom: 7%;
+    padding: 1.5%;
+  }
+
+  .btn-cipher:hover {
+    background-color: #B9EDDD;
+    color: #159895;
+    border-color: #159895;
+  }
+
+  .cipher-text {
+    font-size: 1rem;
+    font-weight: bold;
+    color: #569DAA;
+  }
+  .navbar-brand {
+    font-weight: 600;
+    font-size: 1.75rem;
+  }
+  .nav-link {
+    font-size: 0.85rem;
+    font-family: 'Montserrat-light', sans-serif;
+  }
+  .big-heading {
+    font-size: 1.85rem;
+    line-height: 2;
+  }
+  .feature-text {
+    font-size: 1rem;
+  }
+  .feature-solid {
+    color: #1A5F7A;
+    font-size: 200%;
+  }
+
+  .feature-solid:hover {
+    color: #B9EDDD;
+  }
+  .about-text{
+    color: #569DAA;
+    font-size: 1rem;
+    text-align: left;
+  }
+  .about-heading{
+    color: #569DAA;
+    font-weight: bold;
+    font-size: 1.5rem;
+    text-align: left;
+  }
+  #footer {
+    width: 100%;
+    height: 20%;
+    padding:1.5%;
+    font-size: 0.85rem;
+    margin: auto;
+  }
+  #input{
+    background-color: #B9EDDD;
+    color: #1A5F7A;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  #output{
+    background-color: #B9EDDD;
+    color: #1A5F7A;
+    font-weight: bold;
+    font-size: 1rem;
+  }
+
+  .i-phone {
+    transform: rotate(0);
+    position: static;
+    width: 60%;
+  }
+}
+
+/* Features */
+#features {
+  position: relative;
+  z-index: 1;
+}
+
+
+.btn
+{
+  background-color: #B9EDDD;
+  color: #159895;
+  border:0;
+  margin-top: 2%;
+  padding: 2%;
+  width: 75%;
+  height: 90%;
+}
+
+.btn:hover {
+  background-color: #159895;
+  color: #B9EDDD;
+  border-color: #B9EDDD;
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.col-lg-4 {
+  padding: 4%;
+}

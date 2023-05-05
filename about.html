@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>About</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<!-- Bootstrap  -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+<!-- google fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&family=Ubuntu&display=swap" rel="stylesheet">
+
+<!-- favicon -->
+<link rel="icon" href="images/favicon_about.ico">
+
+<!-- css -->
+<link rel="stylesheet" href="css/styles.css">
+
+<!-- font awesome -->
+<script src="https://kit.fontawesome.com/93cd58d5b2.js" crossorigin="anonymous"></script>
+
+
+<body>
+
+  <section class="coloured-section" id="title">
+    <div class="container-fluid">
+
+			<!-- Navbar -->
+      <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="">About</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ms-auto">
+            <li class="navb-item">
+              <a class="nav-link" href="index.html"><i class="fa-solid fa-house-chimney"></i> Home</a>
+            </li>
+          </ul>
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" onClick="window.location.reload();"><i class="fa-solid fa-rotate"></i> Refresh</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
+  </section>
+
+
+  <section class="white-section" id="features">
+
+    <div class="container-fluid">
+      <p class="about-text">
+        A set of tools, techniques, and protocols used for the encryption, decryption,
+        authentication, and integrity of digital data is known as a cryptographic toolkit. Several
+        cryptographic methods, including symmetric and asymmetric encryption, digital
+        signatures, hash functions, and key exchange protocols, are often included in a
+        cryptographic toolkit. In this project, we have tried to implement Affine, Vigenere,
+        Caesar, and DES cryptographic functions. Affine, vigenere, and caesar are based on
+        substitution cryptography whereas DES, a block cipher uses permutation, substitution,
+        and round key generator functions. Substitution and Block ciphers are traditional and
+        more popular.
+      </p>
+      <br>
+      <h2 class="about-heading"><strong>Affine Cipher</strong></h2>
+      <p class="about-text">
+        The Affine cipher is a type of monoalphabetic substitution cipher, wherein each letter
+        in an alphabet is mapped to its numeric equivalent, encrypted using a simple mathematical function,
+        and converted back to a letter.
+      </p>
+      <p class="about-text"><strong>Encryption</strong></p>
+      <p class="about-text">
+          E(x)=(ax+b)mod m modulus m: size of the alphabet
+          a and b: key of the cipher.a must be chosen such that a and m
+          are coprime
+        </p>
+        <p class="about-text"><strong>Decryption</strong></p>
+        <p class="about-text">
+          D(x)=a-1(x-b)mod m a-1: modular
+          multiplicative inverse
+          of a modulo m. i.e., it
+          satisfies the equation 1 = a a -1 mod m
+        </p>
+        <br>
+
+        <h2 class="about-heading"><strong>Caesar Cipher</strong></h2>
+        <p class="about-text">
+          It’s simply a type of
+          substitution cipher,
+          i.e., each letter of a
+          given text is
+          replaced by a letter
+          with a fixed number
+          of positions down
+          the alphabet. For
+          example with a
+          shift of 1, A would
+          be replaced by B,
+          B would become C,
+          and so on.
+        </p>
+          <p class="about-text"><strong>Encryption</strong></p>
+          <p class="about-text">
+            E(x)=(x+n)mod 26
+            Encryption with
+            shift n
+          </p>
+          <p class="about-text"><strong>Decryption</strong></p>
+          <p class="about-text">
+            D(x)=(x-n)mod 26
+            Decryption with shift
+            n
+          </p>
+          <br>
+
+          <h2 class="about-heading"><strong>Vigenere Cipher</strong></h2>
+          <p class="about-text">
+            It uses a simple
+            form of
+            polyalphabetic substitution. A
+            polyalphabetic
+            cipher is any cipher
+            based on
+            substitution, using
+            multiple
+            substitution
+            alphabets. The
+            encryption of the
+            original text is done
+            using the Vigenère
+            square or Vigenère
+            table.
+
+          </p>
+          <p class="about-text"><strong>Encryption</strong></p>
+          <p class="about-text">
+            Ei=(Pi+Ki) mod 26
+            Pi: plaintext at i
+            th position
+            Ki: key at i
+            th position
+            </p>
+            <p class="about-text"><strong>Decryption</strong></p>
+            <p class="about-text">
+              Di=(Ei-Ki+26)mod 26
+              Ei: Ciphertext at i
+              th position
+              Ki: key at i
+              th position
+            </p>
+            <br>
+
+            <h2 class="about-heading"><strong>DES Cipher</strong></h2>
+            <p class="about-text">
+              DES is a block
+              cipher and
+              encrypts data in
+              blocks of size of 64
+              bits each, which
+              means 64 bits of
+              plain text go as the
+              input to DES,
+              which produces 64
+              bits of ciphertext.
+              The same
+              algorithm and key
+              are used for
+              encryption and
+              decryption, with
+              minor differences.
+              The key length is
+              56 bits.
+            </p>
+            <p class="about-text"><strong>Encryption</strong></p>
+            <p class="about-text">
+              In the first step, the
+              64-bit plain text
+              block is handed
+              over to an initial
+              Permutation (IP)
+              function.
+              The initial
+              permutation is
+              performed on plain
+              text.
+              Next, the initial
+              permutation (IP)
+              produces two
+              halves of the
+              permuted block;
+              saying Left Plain
+              Text (LPT) and
+              Right Plain Text
+              (RPT).
+              Now each LPT and
+              RPT go through 16
+              rounds of
+              </p>
+              <p class="about-text"><strong>Decryption</strong></p>
+              <p class="about-text">
+                Decryption is almost
+                the same steps in
+                reverse order.
+              </p>
+
+              <br>
+              <h2 class="about-heading"><strong>Conclusion</strong></h2>
+              <p class="about-text">
+                This website is made as a part of the <strong>Computer Security (CS4035D)</strong> assignment of the
+                <strong>Department of Computer Science and Engineering</strong> (S6) in the
+                <strong>National Institute of Technology Calicut.</strong> Overall, a cryptographic toolkit project
+                represents an important contribution to the field
+                of digital security and can have a significant impact on the security of our digital world.
+                As we continue to rely more and more on digital communication and data storage, the
+                need for robust and reliable cryptographic tools will only continue to grow, making the
+                development of such projects valuable and rewarding.
+              </p>
+              <br>
+              <h2 class="about-heading" style="text-align: right;"><strong>© Team no. 14</strong></h2>
+              <p class="about-text" style="text-align: right;">
+                -Ananthakrishnan M (B200712CS)
+              </p>
+              <p class="about-text" style="text-align: right;">
+                -Muhammed Roshan H (B200722CS)
+              </p>
+              <p class="about-text" style="text-align: right;">
+                -Visakh Vijayan (B200728CS)
+              </p>
+
+    </div>
+
+  </section>
+
+</body>
+
+</html>
